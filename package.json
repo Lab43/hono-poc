@@ -1,0 +1,14 @@
+{
+  "name": "hono-rpc-poc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "pnpm --filter api dev",
+    "dev:client": "pnpm --filter client dev",
+    "dev": "pnpm --filter api dev & pnpm --filter client dev",
+    "build": "pnpm --filter api build && pnpm --filter client build"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
